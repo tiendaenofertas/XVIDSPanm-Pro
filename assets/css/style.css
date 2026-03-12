@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Contenedor Principal y Textos 
+   ========================================================================== */
+.xvidspro-procomments-wrapper {
+    width: 100% !important;
+    margin: 30px 0 !important;
+    font-family: inherit;
+    color: #333 !important;
+}
+
+.xvidspro-title {
+    font-size: 1.4rem !important;
+    color: #111 !important; 
+    border-bottom: 2px solid #ddd !important;
+    padding-bottom: 10px !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    font-weight: bold !important;
+    display: block !important;
+}
+
+/* ==========================================================================
+   Inputs y Textarea (Forzando que no sean grises)
+   ========================================================================== */
+.xvidspro-form-group {
+    margin-bottom: 15px !important;
+    width: 100% !important;
+}
+
+.xvidspro-form-group label {
+    display: block !important;
+    font-size: 0.9rem !important;
+    font-weight: bold !important;
+    margin-bottom: 6px !important;
+    color: #444 !important;
+    text-transform: uppercase !important;
+}
+
+#xvidspro-comment-form input[type="text"],
+#xvidspro-comment-form textarea {
+    width: 100% !important;
+    padding: 12px 15px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+    background-color: #fff !important;
+    color: #222 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* ==========================================================================
+   CAPTCHA Blindado y Pequeño
+   ========================================================================== */
+.xvidspro-form-footer {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 15px !important;
+    padding-top: 15px !important;
+}
+
+.xvidspro-captcha-box {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.xvidspro-captcha-box label {
+    font-size: 0.95rem !important;
+    color: #333 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    font-weight: bold !important;
+}
+
+.xvidspro-robot-icon {
+    font-size: 1.4rem !important;
+    margin-right: 5px !important;
+}
+
+/* Forzar que el input numérico sea pequeño */
+#xvidspro_captcha_answer {
+    width: 70px !important;
+    min-width: 70px !important;
+    max-width: 70px !important;
+    height: 40px !important;
+    text-align: center !important;
+    padding: 5px !important;
+    border: 1px solid #aaa !important;
+    border-radius: 4px !important;
+    background-color: #fff !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 1.1rem !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================================================
+   Botón Principal
+   ========================================================================== */
+#xvidspro_submit_btn {
+    padding: 12px 30px !important;
+    border-radius: 4px !important;
+    border: none !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+    font-size: 1rem !important;
+    text-transform: uppercase !important;
+}
+
+/* ==========================================================================
+   Botón de "Me Gusta"
+   ========================================================================== */
+#xvidspro-comments-list-container .xvidspro-btn-like {
+    background: #f8f8f8 !important;
+    border: 1px solid #ccc !important;
+    border-radius: 20px !important;
+    padding: 4px 15px !important;
+    cursor: pointer !important;
+    color: #333 !important;
+    font-size: 0.9rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+    box-shadow: none !important;
+    width: auto !important;
+    min-width: 0 !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+}
+
+#xvidspro-comments-list-container .xvidspro-btn-like.xvidspro-liked {
+    background-color: #e6f0fa !important;
+    border-color: #0073aa !important;
+    color: #0073aa !important;
+}
+
+/* ==========================================================================
+   Móviles
+   ========================================================================== */
+@media (max-width: 600px) {
+    .xvidspro-form-footer {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    .xvidspro-captcha-box {
+        justify-content: flex-start !important;
+        margin-bottom: 15px !important;
+    }
+}
